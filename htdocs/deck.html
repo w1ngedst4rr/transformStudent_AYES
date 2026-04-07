@@ -25,11 +25,18 @@
             padding: 10px;
             font-weight: bold;
             position: absolute;
-            bottom: 50px;
-            right: 50px;
+            bottom: auto;
+            right: auto;
             transform-origin: bottom left; 
             transition: all 0.6s ease-in-out;
+            z-index: 1;
         }
+
+        #deck div:nth-child(1) { top: 15vh; left: 15vw; }
+        #deck div:nth-child(2) { top: 15vh; left: 15vw; z-index: 2; }
+        #deck div:nth-child(3) { top: 15vh; left: 15vw; z-index: 3; }
+        #deck div:nth-child(4) { top: 15vh; left: 15vw; z-index: 4; }
+        #deck div:nth-child(5) { top: 15vh; left: 15vw; z-index: 5; }
 
         #deck div:nth-child(1):hover { background-color: white; color: black; }
         #deck div:nth-child(2):hover { background-color: orange; }
@@ -48,7 +55,7 @@
 </head>
 <body>
     <div id="deck">
-        <div>&#9824;</div> <div>&#127808;</div> <div>&#9670;</div> <div>&#10084;</div> <div>&#127183;</div> </div>
+        <div>&#9824;</div> <div>&#127808;</div> <div>&#9670;</div> <div>&#10084;</div> <div>🃏</div> </div>
     <button onclick="location.href='../index.html'">Click me for Home</button>
 </body>
 </html>
